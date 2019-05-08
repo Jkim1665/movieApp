@@ -1,0 +1,213 @@
+/* Main Body Styles */
+
+
+$white: rgb(255, 255, 255);
+$theme-color: rgb(175, 51, 51);
+$quote-font: "Cantarell", sans-serif;
+$theme-hover: rgb(175, 51, 50);
+$showtime-background: #ffffff;
+$logo-font: "Pacifico", cursive;
+$body-font: "Open Sans", sans-serif;
+$form-background: #ffffff;
+
+/* Main Body Styles */
+body {
+    font-family: $body-font;
+    background-color: $white;
+}
+
+.welcome {
+    height: 100vh;
+    display: block;
+    position: relative;
+}
+  
+.welcome::after {
+    content: "";
+    // background-image: url(../images/homepage-images/movie-theater.jpg);
+    background-size: 100% 100%;
+    opacity: .2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+}
+
+h1 {
+    color: $white;
+    opacity: 1;
+    text-align: center;
+    font-family: $logo-font;
+    margin: 20px auto;
+    text-shadow: 3px 3px rgba(0, 0, 0, .8);
+}
+
+a {
+    color: $white;
+    text-decoration: none;
+}
+
+/* Navigation Styles */
+.navbar {
+    background-color: $theme-color;
+    font-family: $logo-font;
+}
+
+/* .navbar-home {
+    background: linear-gradient(to bottom, #d3353e 0%, rgba(0,0,0,0) 100%);
+    border-bottom: none;
+} */
+
+.navbar-default  .navbar-nav li a {
+    color: $white;
+}
+
+.navbar-default .navbar-nav li a:hover {
+    color: $white;
+}
+
+.navbar-brand {
+    transform: translateX(-50%);
+    top: -7px;
+    left: 51%;
+    position: absolute;
+}
+
+.navbar-default .navbar-brand {
+    color: $theme-color;
+    font-size: 150px;
+    text-shadow: -5px 0 #fff, 0 5px #fff, 5px 0 #fff, 0 -5px #fff;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: $theme-hover;
+}
+
+// #movie-quote {
+
+// }
+
+
+#logo {
+    font-family: $logo-font;
+    font-size: 50px;
+    padding: 20px 0;
+}
+
+#about-link {
+    padding: 20px 0;
+    font-family: $body-font;
+    font-size: 15px;
+}
+
+/* Landing Page Styles */
+.landing-page {
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    transform: translateY(-50%);
+}
+
+form {
+    background-color: $white;
+    padding: 25px;
+    border-radius: 15px;
+    /* margin: 0 10px; */
+    /* opacity: .95; */
+}
+
+.more-options:hover {
+    cursor: pointer;
+}
+
+#options {
+    display: inline-block;
+}
+
+#show-hide {
+    display: none;
+}
+
+.submit-btn {
+    width: 100%;
+    color: $white;
+    background-color: $theme-color;
+    padding: 10px;
+    font-weight: 700;
+}
+
+.submit-btn:hover {
+    background-color: $theme-hover;
+    cursor: pointer;
+    box-shadow: 3px 3px 7px rgba(33, 33, 33, .5);
+}
+
+/* Results Page Styles */
+#results, .content {
+    margin-top: 120px;
+}
+
+#showtimes {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: $theme-color;
+    color: $white;
+    letter-spacing: 1px;
+}
+
+#showtimes:hover {
+    box-shadow: 3px 3px 7px rgba(33, 33, 33, .5);
+    cursor: pointer;
+    background-color: $theme-hover;
+}
+
+#search-results {
+    background-color: #ebebeb;
+    min-height: 80vh;
+}
+
+.showtime-listings {
+    background-color: $white;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+#map-results img {
+    position: fixed;
+    max-width: 585px;
+}
+
+#directions {
+    background-color: $theme-color;
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    color: $white;
+   
+}
+
+/* About Page Styles */
+.content h1 {
+    color: #000;
+    text-shadow: none;
+    text-align: left;
+    padding-top: 20px;
+}
+
+.profile {
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+.about {
+    margin-bottom: 30px;
+}
+
+//preloader CSS
+
